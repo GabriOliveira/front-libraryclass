@@ -17,9 +17,13 @@ import InserirDevolucao from './pages/Devolução/InserirDevolucao';
 import VerCategoriaApagar from './pages/Categorias/CriarCategoria';
 import Avaliacao from './pages/Avaliacao/Avaliacao';
 import Sessoes from './pages/Sessões/Sessoes';
+
 import VerUmaCategoria from './pages/Categorias/VerUmaCategoria';
 import EditarCategoria from './pages/Categorias/EditarCategoria';
 import DeletarCategoria from './pages/Categorias/DeletarCategoria';
+
+
+import Devolucoes from './pages/Devoluções/Devolucoes';
 
 
 export default function MyRoutes() {
@@ -30,6 +34,7 @@ export default function MyRoutes() {
             <Routes>
                 
                 <Route path="/" element={<Inicio />} />
+                <Route path='/devolucoes' element={<Devolucoes />}/>
                 <Route path='/sessoes' element={<Sessoes />}/>
                 <Route path="/Login" element={<Login />} />
                 <Route path="/Configuracao" element={<Configuração />} />
