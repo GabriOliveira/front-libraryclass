@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './Devolucoes.css';
 export default function Devolucoes() {
   const [devolver, setDevolver] = useState([]);
   const addDevolucao = (e) => {
@@ -7,18 +7,20 @@ export default function Devolucoes() {
     return setDevolver([devolver]);
   }  
   return (
-    <div style={{backgroundColor : 'black'}}>
+    <div className='container-devolucoes'>
         
-    <div>
-        <input type='text' id='devolucao' onChange={(e) => setDevolver(e.target.value)} />
-        <button type='submit' onClick={addDevolucao}/>
-    </div>
+    <div className='conteudo-devolucoes'>
     <h1>Devoluções</h1>
-    <ul style={{color : 'white'}}>
+        <input className='input-devolucoes'  placeholder='Escreva o livro a ser devolvido...' type='text' id='devolucao' onChange={(e) => setDevolver(e.target.value)} />
+        <input className='button-devolucoes' type='button' value='Devolver' onClick={addDevolucao}/> 
+        <ul >
        {devolver.map((item) => (
             <li key={item}>{item}</li>
         ))}
         </ul>
+    </div>
+    
+   
     </div>
 
   )

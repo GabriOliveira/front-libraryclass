@@ -5,11 +5,14 @@ export default function Sessoes() {
 
   return (
     <div className='container-sessoes'>
-        <input type='text' placeholder='categoria' onClick={() => setLista(lista ++)}/>
+      <div className='conteudo-sessoes'>
+        <h1>Sessões</h1>
+        <input className='input-sessoes'type='text' placeholder='Coloque a Categoria aqui...' onClick={() => setLista(lista ++)}/>
 
-        <input type='text' placeholder='nome'/>
-        <input type='text' placeholder='id do livro'/>
-        <input type='button' value="Enviar"/>
+        <input className='input-sessoes' type='text' placeholder='Coloque o nome aqui...'/>
+        <input className='input-sessoes' type='text' placeholder='Coloque o ID do Livro aqui...'/>
+        <input className='button-sessoes' type='button' value="Enviar"/>
+        </div>
     </div>
   )
 }

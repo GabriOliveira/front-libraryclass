@@ -14,7 +14,7 @@ export default function Inicio() {
         <img src="logo.png" alt="" className="logo" />
       </div>
       <div className="conteudo-tela-inicio">
-        <h2>Para onde deseja ir ?</h2>
+        <h2 style={{color : 'white'}}>Para onde deseja ir ?</h2>
         <br />
         <br />
         <Botao nomebotao="Login" />
